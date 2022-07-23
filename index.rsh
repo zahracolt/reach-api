@@ -27,11 +27,11 @@ export const main = Reach.App(() => {
       check( this != Alice, "you are the user");
       return [ 0, (z) => {
         if(counter < 5){
-          k(counter);
+          z(counter);
           userArray.insert(this);
         }
         else{
-          k(counter);
+          z(counter);
         }
         return [ counter + 1];
       }];
