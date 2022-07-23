@@ -25,7 +25,7 @@ export const main = Reach.App(() => {
     .while( counter < 10 )
     .api_(User.addUsers, () => {
       check( this != Alice, "you are the user");
-      return [ 0, (k) => {
+      return [ 0, (z) => {
         if(counter < 5){
           k(counter);
           userArray.insert(this);
